@@ -25,6 +25,6 @@ def ajedrez_partida():
             tablero[fila_origen - 1][columna_origen - 1] = ""
             movimiento += 1
             for i in tablero: # Con esto convierto las listas en una cadena formada por los elementos de la lista.
-                print('\t'.join(i) + '\n')
+                print('\t'.join(i) + '\n') #Cohesionado todo
             print(f"Llevas {movimiento} movimientos")
 ajedrez_partida()
