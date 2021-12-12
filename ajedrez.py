@@ -12,8 +12,13 @@ def ajedrez_partida():
         else:
             fila_origen = int(input("Introduce la fila de la pieza a mover: "))
             columna_origen = int(input("Introduce la columna de la pieza a mover: "))
-            fila_destino = int(input("Introduce la fila de destino: "))
-            columna_destino = int(input("Introduce la columna de destino: "))
+            if fila_origen and columna_origen == "♜" or "♞" or "♝" or "♛" or "♚" or "♟" or "♙" or "♖" or "♘" or "♗" or "♕" or "♔":
+                print ("Hay ficha")
+                fila_destino = int(input("Introduce la fila de destino: "))
+                columna_destino = int(input("Introduce la columna de destino: "))
+            else:
+                print("No hay ficha, seleccione otro movimiento")
+                break
             tablero[fila_destino - 1][columna_destino - 1] = tablero[fila_origen - 1][
                 columna_origen - 1
             ]
@@ -21,4 +26,5 @@ def ajedrez_partida():
             movimiento += 1
             for i in tablero: # Con esto convierto las listas en una cadena formada por los elementos de la lista.
                 print(" ".join(i))
+            print(f"Llevas {movimiento} movimientos")
 ajedrez_partida()
