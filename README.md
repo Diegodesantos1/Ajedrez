@@ -14,9 +14,7 @@
 
 <h1 align="center">2.Diagrama de flujo</h1>
 
-<center>
-	 <img src="https://github.com/Diegodesantos1/Ajedrez/blob/main/Flowchart%20ajedrez.drawio.png" alt="Flowchart">
-</center>
+<center><img src="https://github.com/Diegodesantos1/Ajedrez/blob/main/Flowchart%20ajedrez.drawio.png" alt="Flowchart"></center>
 
 *Para verlo más claro pincha [aquí](https://github.com/Diegodesantos1/Ajedrez/blob/main/Flowchart%20ajedrez.drawio.png)*
 
